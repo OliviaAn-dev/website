@@ -11,7 +11,8 @@ Validate that Jekyll is installed by running in terminal:
 jekyll -v
 ```
   
-# Development
+## Development
+For deployment Github Pages are configured deploy from the branch: production  
+and subfolder /docs in the repository.
 
-Testing website locally, see [testing docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)  
-
+Testing website locally, see [testing docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) 
