@@ -11,4 +11,7 @@ Validate that Jekyll is installed by running in terminal:
 jekyll -v
 ```
   
-## 
+# Development
+
+Testing website locally, see [testing docs](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll)  
+
