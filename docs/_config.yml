@@ -1,7 +1,7 @@
 title: "Forster and Partners LLP"
 description: "Chartered Professional Accountants — Toronto, Ontario"
-baseurl: ""
-url: ""
+baseurl: "/website"
+url: "https://oliviaan-dev.github.io"
 exclude:
   - Gemfile
   - Gemfile.lock
