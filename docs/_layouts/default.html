@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="theme-color" content="#1e3a5f">
+  <title>{% if page.title == 'Home' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+
+  <header class="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="{{ '/' | relative_url }}" class="navbar-brand">
+        <span class="brand-main">Forster and Partners</span>
+        <span class="brand-sub">LLP &middot; Chartered Professional Accountants</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="navbar-nav" aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}>Home</a>
+        <a href="{{ '/industries/' | relative_url }}"{% if page.url contains 'industries' %} class="active" aria-current="page"{% endif %}>Industries</a>
+        <a href="{{ '/team/' | relative_url }}"{% if page.url contains 'team' %} class="active" aria-current="page"{% endif %}>Our Team</a>
+        <a href="{{ '/contact/' | relative_url }}"{% if page.url contains 'contact' %} class="active" aria-current="page"{% endif %}>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    {{ content }}
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-col--brand">
+          <p class="footer-brand">Forster and Partners LLP</p>
+          <p class="footer-tagline">Chartered Professional Accountants</p>
+          <p class="footer-desc">Providing comprehensive financial services to individuals and businesses for over 40 years.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Address</h4>
+          <address>
+            35 The Links Road, Suite 212<br>
+            Toronto, Ontario M2P 1T7
+          </address>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>Tel: <a href="tel:4163983982">416-398-3982</a></p>
+          <p>Fax: 416-398-3984</p>
+          <p><a href="mailto:rforster@fsscpa.ca">rforster@fsscpa.ca</a></p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/industries/' | relative_url }}">Industries</a></li>
+            <li><a href="{{ '/team/' | relative_url }}">Our Team</a></li>
+            <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; {{ site.time | date: '%Y' }} Forster and Partners LLP. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+title: "Forster and Partners LLP"
+description: "Chartered Professional Accountants — Toronto, Ontario"
+baseurl: ""
+url: ""
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
