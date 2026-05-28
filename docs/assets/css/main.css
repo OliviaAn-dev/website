@@ -473,6 +473,16 @@ ul { list-style: none; }
 .team-card .contact-details a { color: var(--navy); }
 .team-card .contact-details a:hover { color: var(--gold); }
 
+.team-photo {
+  display: block;
+  width: calc(100% + 3rem);
+  margin: -1.5rem -1.5rem 1.25rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+}
+
 /* ============================================================
    Contact page
    ============================================================ */
