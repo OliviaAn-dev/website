@@ -536,10 +536,16 @@ ul { list-style: none; }
   display: block;
   width: 140px;
   height: 140px;
-  margin: 0;
+  margin: 0 auto 1.25rem;
   object-fit: cover;
   object-position: top center;
   border-radius: 50%;
+}
+
+.team-photo-placeholder {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.25rem;
 }
 
 /* ============================================================
