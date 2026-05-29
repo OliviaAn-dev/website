@@ -30,3 +30,16 @@ cd docs
 bundle install
 bundle exec jekyll serve
 ```
+
+## Deployment
+Github pages set up to update the website based on changes to production branch.
+
+If you want to merge changes from main branch to production,  
+assuming you have all changes already merged to the main brnach.
+
+```sh
+git checkout production
+git merge main
+git push
+git checkout main
+```
