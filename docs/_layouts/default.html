@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +10,29 @@
   <link rel="icon" type="image/jpeg" href="{{ '/assets/images/logo-small.jpg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
+
 <body>
 
   <header class="navbar" role="banner">
     <div class="container navbar-inner">
       <a href="{{ '/' | relative_url }}" class="navbar-brand">
-        <img src="{{ '/assets/images/logo-big.jpg' | relative_url }}" alt="Forster and Partners LLP – Chartered Professional Accountants" class="navbar-logo">
+        <img src="{{ '/assets/images/logo-big.jpg' | relative_url }}"
+          alt="Forster and Partners LLP – Chartered Professional Accountants" class="navbar-logo">
       </a>
       <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <nav class="navbar-nav" aria-label="Main navigation">
-        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="active" aria-current="page"{% endif %}>Home</a>
-        <a href="{{ '/industries/' | relative_url }}"{% if page.url contains 'industries' %} class="active" aria-current="page"{% endif %}>Industries</a>
-        <a href="{{ '/team/' | relative_url }}"{% if page.url contains 'team' %} class="active" aria-current="page"{% endif %}>Our Team</a>
-        <a href="{{ '/contact/' | relative_url }}"{% if page.url contains 'contact' %} class="active" aria-current="page"{% endif %}>Contact</a>
+        <a href="{{ '/' | relative_url }}" {% if page.url=='/' %} class="active" aria-current="page" {% endif
+          %}>Home</a>
+        <a href="{{ '/industries/' | relative_url }}" {% if page.url contains 'industries' %} class="active"
+          aria-current="page" {% endif %}>Industries</a>
+        <a href="{{ '/team/' | relative_url }}" {% if page.url contains 'team' %} class="active" aria-current="page" {%
+          endif %}>Our Team</a>
+        <a href="{{ '/careers/' | relative_url }}" {% if page.url contains 'careers' %} class="active"
+          aria-current="page" {% endif %}>Careers</a>
+        <a href="{{ '/contact/' | relative_url }}" {% if page.url contains 'contact' %} class="active"
+          aria-current="page" {% endif %}>Contact</a>
       </nav>
     </div>
   </header>
@@ -38,7 +47,8 @@
         <div class="footer-col footer-col--brand">
           <p class="footer-brand">Forster and Partners LLP</p>
           <p class="footer-tagline">Chartered Professional Accountants</p>
-          <p class="footer-desc">Providing comprehensive financial services to individuals and businesses for over 40 years.</p>
+          <p class="footer-desc">Providing comprehensive financial services to individuals and businesses for over 40
+            years.</p>
         </div>
         <div class="footer-col">
           <h4>Address</h4>
@@ -51,7 +61,7 @@
           <h4>Contact</h4>
           <p>Tel: <a href="tel:4163983982">416-398-3982</a></p>
           <p>Fax: 416-398-3984</p>
-          <p><a href="mailto:rforster@fsscpa.ca">rforster@fsscpa.ca</a></p>
+          <p><a href="mailto:rforster@forpar.ca">rforster@forpar.ca</a></p>
         </div>
         <div class="footer-col">
           <h4>Navigate</h4>
@@ -59,6 +69,7 @@
             <li><a href="{{ '/' | relative_url }}">Home</a></li>
             <li><a href="{{ '/industries/' | relative_url }}">Industries</a></li>
             <li><a href="{{ '/team/' | relative_url }}">Our Team</a></li>
+            <li><a href="{{ '/careers/' | relative_url }}">Careers</a></li>
             <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
           </ul>
         </div>
@@ -71,4 +82,5 @@
 
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
+
 </html>

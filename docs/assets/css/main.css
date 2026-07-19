@@ -566,6 +566,17 @@ ul { list-style: none; }
 .contact-block a { color: var(--navy); }
 .contact-block a:hover { color: var(--gold); }
 
+.contact-block h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  font-weight: 700;
+  margin: 1.5rem 0 0.6rem;
+}
+
+.contact-block h4:first-of-type { margin-top: 0; }
+
 .contact-table {
   width: 100%;
   border-collapse: collapse;
