@@ -28,7 +28,7 @@ bundle exec jekyll serve --baseurl=""
 ```sh
 cd docs
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --livereload --open-url --incremental
 ```
 
 ## Deployment

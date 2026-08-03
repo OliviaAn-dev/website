@@ -49,6 +49,10 @@ h1, h2, h3, h4, h5, h6 {
 a { color: var(--navy); text-decoration: none; transition: color var(--ease); }
 a:hover { color: var(--gold); }
 
+.position-link { text-decoration: underline; }
+/* .position-link { color: var(--gold); text-decoration: underline; } */
+/* .position-link:hover { color: var(--navy); } */
+
 address { font-style: normal; }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -97,7 +101,7 @@ ul { list-style: none; }
 
 .intro-text {
   font-size: 1.05rem;
-  color: var(--text-muted);
+  color: var(--text);
   line-height: 1.85;
   max-width: 760px;
 }
@@ -344,7 +348,7 @@ ul { list-style: none; }
   margin-bottom: 0.5rem;
 }
 
-.card p { color: var(--text-muted); font-size: 0.95rem; }
+.card p { color: var(--text); font-size: 0.95rem; }
 
 /* Why choose us card (dark) */
 .card-dark {
@@ -450,7 +454,7 @@ ul { list-style: none; }
 
 .team-card .bio {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text);
   line-height: 1.75;
   margin-bottom: 1rem;
 }
@@ -499,13 +503,13 @@ ul { list-style: none; }
 .profile-body p {
   font-size: 1rem;
   line-height: 1.8;
-  color: var(--text-muted);
+  color: var(--text);
   margin-bottom: 1.5rem;
 }
 
 .profile-body .contact-details {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: var(--text);
   line-height: 1.9;
 }
 
